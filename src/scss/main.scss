@@ -1,0 +1,50 @@
+// * Це головний sass/scss файл проекту
+// * імпортуйте сюди всі інші ваші файли sass/scss
+@import "./helpers/normalize.scss";
+
+@import "./helpers/container_wrapper.scss";
+@import "./helpers/body.scss";
+
+@import "./header/header.scss";
+
+@import "./center/center-styles.scss";
+
+@import "./footer/footer.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.dialog {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: #10bbd5;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0;
+  }
+
+  &__image {
+  }
+}

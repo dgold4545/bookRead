@@ -1,0 +1,83 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.header-top {
+  background-color: #10bbd5;
+  // height: 72px;
+
+  &__logo,
+  &__cart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #f8fdfe;
+    text-decoration: none;
+  }
+
+  &__cart {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f8fdfe;
+  }
+
+  &__cart-btn {
+    position: relative;
+    background-color: transparent;
+    border: 0;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 83%;
+    color: #000;
+  }
+
+  &__cart-value {
+    position: absolute;
+    top: 13px;
+    left: 25px;
+  }
+
+  &__cart-basket {
+    // padding: 16px 0;
+  }
+}
+.header--space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-bottom {
+  background-color: #fff;
+
+  &__category {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+  }
+  &__group {
+    display: inline-flex;
+    gap: 40px;
+  }
+
+  &__order,
+  &__wishlist,
+  &__singIn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    text-decoration: none;
+    padding: 4px 0;
+  }
+}
